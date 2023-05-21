@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 20px;
+      background-color: #fce4ec;
+      color: #333;
+    }
+
+    h1 {
+      color: #e91e63;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .endpoint {
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .endpoint h2 {
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    .endpoint p {
+      margin-top: 5px;
+      line-height: 1.4;
+    }
+
+    code {
+      background-color: #e91e63;
+      color: #fff;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .endpoint {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>API Documentation</h1>
+
+  <div class="endpoint">
+    <h2>/animeme</h2>
+    <p>GET request to fetch a random meme from the "Animemes" subreddit.</p>
+    <p>Endpoint: <code>http://localhost:8080/animeme</code></p>
+    <p>Returns a JSON object with the following properties:</p>
+    <ul>
+      <li><code>title</code>: The title of the meme</li>
+      <li><code>url</code>: The URL of the meme image</li>
+    </ul>
+  </div>
+
+  <div class="endpoint">
+    <h2>/henmeme</h2>
+    <p>GET request to fetch a random meme from the "Hentaimemes" subreddit.</p>
+    <p>Endpoint: <code>http://localhost:8080/henmeme</code></p>
+    <p>Returns a JSON object with the following properties:</p>
+    <ul>
+      <li><code>title</code>: The title of the meme</li>
+      <li><code>url</code>: The URL of the meme image</li>
+    </ul>
+  </div>
+</body>
+</html>
