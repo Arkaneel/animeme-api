@@ -18,7 +18,7 @@ const isImageUrl = (url) => {
 };
 
 app.get("/", (req, res) => {
-  const filePath = path.join(__dirname, "animeme-api.html");
+  const filePath = path.join(__dirname, "docs.html");
   res.sendFile(filePath);
 });
 
