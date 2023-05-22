@@ -9,7 +9,7 @@ An api that fetches anime memes from r/Animemes and Hentai memes from r/Hentaime
 
 ## API
 
-https://vast-puce-mite-fez.cyclic.app/
+> https://vast-puce-mite-fez.cyclic.app/
 
 ## Api Docs
 
