@@ -6,12 +6,26 @@ An api that fetches anime memes from r/Animemes and Hentai memes from r/Hentaime
 
 https://vast-puce-mite-fez.cyclic.app/
 
+## Api Docs
+
+<a href="https://vast-puce-mite-fez.cyclic.app/">API Docs</a>
+
 ## Endpoints
 
 - animeme : Fetches Anime Meme.
 - henmeme : Fetches Hentai Meme.
 
+## Example Response
 
+```
+{
+
+	"title":"The Badonkas Slayer",
+
+	"url":"https://i.redd.it/5uh2n3179n0b1.jpg"
+
+}
+```
 ## Hosting
 
 > We are proudly hosted on [cyclic.sh](https://cyclic.sh)
