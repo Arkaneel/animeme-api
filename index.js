@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
   const filePath = path.join(__dirname, "docs.html");
   res.sendFile(filePath);
 });
+//Anime
 
 app.get("/animeme", async (req, res) => {
   try {
@@ -99,80 +100,14 @@ app.get("/henmeme", async (req, res) => {
       error: "Failed to fetch meme",
     });
   }
-});
-//Wallpaper SFW
 
-app.get("/wpsfw", async (req, res) => {
 
-  try {
 
-    const response = await axios.get(
 
-      "https://www.reddit.com/r/Animewallpaper/random/.json"
 
-    );
 
-    const data = response.data;
 
-    if (
 
-      data &&
-
-      data[0] &&
-
-      data[0].data &&
-
-      data[0].data.children &&
-
-      data[0].data.children.length > 0
-
-    ) {
-
-      const aniMeme = data[0].data.children[0].data;
-
-      if (aniMeme.thumbnail && aniMeme.title && isImageUrl(aniMeme.url)) {
-
-        const meme = {
-
-          title: aniMeme.title,
-
-          url: aniMeme.url,
-
-        };
-
-        res.json(meme);
-
-      } else {
-
-        res.status(500).json({
-
-          error: "Failed to fetch wallpaper",
-
-        });
-
-      }
-
-    } else {
-
-      res.status(500).json({
-
-        error: "Failed to fetch wallpaper",
-
-      });
-
-    }
-
-  } catch (error) {
-
-    res.status(500).json({
-
-      error: "Failed to fetch wallpaper",
-
-    });
-
-  }
-
-});
 
 
 app.listen(PORT, () =>
