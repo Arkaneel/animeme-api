@@ -11,6 +11,10 @@ An api that fetches anime memes from r/Animemes and Hentai memes from r/Hentaime
 
 > https://vast-puce-mite-fez.cyclic.app/
 
+## Health 
+
+[![DeepSource](https://app.deepsource.com/gh/Arkaneel/animeme-api.svg/?label=active+issues&show_trend=true&token=vqjCqtYyXD6P2dUnNjfzWAsz)](https://app.deepsource.com/gh/Arkaneel/animeme-api/?ref=repository-badge)
+
 ## Api Docs
 
 <a href="https://vast-puce-mite-fez.cyclic.app/">API Docs</a>
